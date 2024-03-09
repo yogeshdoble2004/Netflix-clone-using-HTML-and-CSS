@@ -1,0 +1,308 @@
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+    width: 100vw;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.header-content{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0, 0, 0, 0.7)),url(./asset/header-image.png);
+    background-size: cover;
+    
+   
+}
+.nav-bar{
+    height: 60px;
+    background-color:rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    padding: 0px 200px;
+    display: flex;
+    position: relative;
+    top: 0;
+}
+
+.image{
+    flex:1;
+    padding-top: 10px;
+
+}
+
+img{
+    height: 55px;
+    width: 150px;
+}
+
+.sel{
+    height: 27px;
+    width: 100px;
+    margin-top: 18px;
+    position: relative;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sel::after{
+    content: '\25BC';
+    color: white;
+    font-size: 13px;;
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    transform: translateY(-50%);
+}
+
+.sel select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: white;
+    padding-left: 10px;
+}
+
+.btn{
+    height:30px;
+    width: 80px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    background-color:red;
+    margin: 15px 10px;
+    border: 0px red;
+    border-radius: 5px;
+}
+.getting_started{
+    height: 100vh;
+    padding-top: 150px;
+}
+
+h1{
+    color: white;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: bolder;
+    opacity: 1;
+    font-size: 55px;
+   
+}
+
+h3{
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size:22px;
+    padding-right: 20px;
+}
+
+.inputs{
+    text-align: center;
+}
+
+.email{
+    height: 58px;
+    width: 350px;
+    background-color:black;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding-left: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.btn1{
+    height: 60px;
+    width: 220px;
+    font-size: 25px;
+    border-radius: 3px;
+    color: white;
+    background-color: red;
+    border: 0px;
+    margin-left: 5px;
+}
+
+.border{
+    height: 6px;
+    width: 100vw;
+    background-color:darkgrey;
+    opacity: .5;
+}
+
+.features{
+    padding: 80px;
+    display: flex;
+    width: 100vw;
+}
+.text{
+    width: 50vw;
+    padding: 40px 40px;
+    
+}
+
+.img1{
+    flex: 1;
+    height: 400px;
+    width: 500px;
+}
+
+.img2{
+    flex: 1;
+    height: 400px;
+    width: 500px;
+}
+
+.img3{
+    flex: 1;
+    height: 400px;
+    width: 500px;
+}
+.img4{
+    flex: 1;
+    height: 500px;
+    width: 550px;
+}
+
+.frq{
+    padding: 30px 0px;
+}
+
+.frq h2{
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.accordion{
+    width: 80%;
+    margin: 30px auto;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #303030;
+}
+
+.accordion li label{
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+label::before{
+    content: '+';
+    font-size: 44px;
+    position:absolute;
+    right: 130px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordion .content{
+    padding: 0px 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion .content p{
+    color: white;
+}
+
+.accordion input[type="radio"]:checked + label::before{
+     transform: rotate(135deg);
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 400px;
+}
+.input{
+    text-align: center;
+}
+
+.input button a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.footer{
+    margin: 50px 200px;
+    width: 100%;
+}
+
+.footer small{
+    padding-left: 35px;
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    opacity: 0.7;
+}
+
+.policies{
+    display: flex;
+}
+.policies ul li{
+    color: white;
+    list-style: none;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    text-decoration: underline;
+    padding-right: 150px;
+    line-height: 30px;
+    opacity: 0.7;
+}
+
+.lang{
+    display: block;
+    margin: 0px 0px 10px 33px;
+
+}
+
+@media (max-width: 1000px){
+    .nav-bar{
+        padding: 0px 100px;
+    }
+}
+@media (max-width: 950px){
+    .features{
+        flex-direction: column;
+    }
+    .text{
+        width: 100%;
+        text-align: center;
+    }
+    .img1{
+        padding-left: 180px;  
+    }
+    .img2{
+        padding-left: 180px;  
+    }
+    .img3{
+        padding-left: 180px;  
+    }
+    .img4{
+        padding-left: 180px;  
+    }
+}
